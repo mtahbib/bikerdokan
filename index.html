@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN TAILWIND+DAISYUI -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            
+                        'bike-primary': '#E76F51',
+                        'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+
+          
+          }
+        }
+      }
+    }
+  </script>
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+    .font-poppins{
+        font-family: 'Poppins', sans-serif;
+    }
+</style>    
+
+<title>Biker Zone</title>
+</head>
+<body class="font-poppins">
+    <!-- Header -->
+    <header class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl lg:text-4xl">Biker Zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-base menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a class="btn bg-bike-primary text-white">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!-- slider or carousel -->
+        <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-2xl lg:text-6xl font-bold">
+                            Ride-on R15 V4
+                            <br>
+                            with Smile
+                        </h2>
+                        <p>Welcome to our BIKERS ZONE shop. We are importers and retailers and are proud to present a vast range of motorcycles, motorcycle accessories, rider’s clothing and protection equipment.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="/images/slider/bike1.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-2xl lg:text-6xl font-bold">
+                            Ride-on R15 V4
+                            <br>
+                            with Smile
+                        </h2>
+                        <p>Welcome to our BIKERS ZONE shop. We are importers and retailers and are proud to present a vast range of motorcycles, motorcycle accessories, rider’s clothing and protection equipment.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="/images/slider/bike2.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-2xl lg:text-6xl font-bold">
+                            Ride-on R15 V4
+                            <br>
+                            with Smile
+                        </h2>
+                        <p>Welcome to our BIKERS ZONE shop. We are importers and retailers and are proud to present a vast range of motorcycles, motorcycle accessories, rider’s clothing and protection equipment.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="/images/slider/bike3.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-2xl lg:text-6xl font-bold">
+                            Ride-on R15 V4
+                            <br>
+                            with Smile
+                        </h2>
+                        <p>Welcome to our BIKERS ZONE shop. We are importers and retailers and are proud to present a vast range of motorcycles, motorcycle accessories, rider’s clothing and protection equipment.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="/images/slider/bike4.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+<main class="md:container md:mx-auto">
+     <!-- featured bike -->
+     <section>
+
+     </section>
+     <!-- latest bikes -->
+     <section class="my-24">
+         <h3 class="text-5xl mb-12 font-semibold text-center">Latest Bikes</h3>
+         <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+             <!-- first card -->
+             <div class="card bg-base-100 shadow-xl">
+                 <figure><img src="/images/others/latest1.png" alt="Shoes" /></figure>
+                 <div class="card-body">
+                     <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+                     <p>The XDiavel Nera will be produced in a limited-edition numbered series of 500 units: it is characterized by an elegant "Black on Black" livery and by a special customizable saddle made of Pelle Frau®.</p>
+                     <div class="card-actions">
+                         <button class="btn text-white bg-bike-primary uppercase">Purchase</button>
+                     </div>
+                 </div>
+             </div>
+             <!-- second card -->
+             <div class="card bg-base-100 shadow-xl">
+                 <figure><img src="/images/others/latest2.png" alt="Shoes" /></figure>
+                 <div class="card-body">
+                     <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+                     <p>The XDiavel Nera will be produced in a limited-edition numbered series of 500 units: it is characterized by an elegant "Black on Black" livery and by a special customizable saddle made of Pelle Frau®.</p>
+                     <div class="card-actions">
+                         <button class="btn text-white bg-bike-primary uppercase">Purchase</button>
+                     </div>
+                 </div>
+             </div>
+             <!-- third card -->
+             <div class="card bg-base-100 shadow-xl">
+                 <figure><img src="/images/others/latest3.png" alt="Shoes" /></figure>
+                 <div class="card-body">
+                     <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+                     <p>The XDiavel Nera will be produced in a limited-edition numbered series of 500 units: it is characterized by an elegant "Black on Black" livery and by a special customizable saddle made of Pelle Frau®.</p>
+                     <div class="card-actions">
+                         <button class="btn text-white bg-bike-primary uppercase">Purchase</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+</main>
+</body>
+</html>
